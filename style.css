@@ -1,0 +1,139 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Fjalla One', sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(33, 33, 33);
+  color: antiquewhite;
+}
+.logo {
+  width: 90px;
+  margin-top: 0.2rem;
+  border-radius: 50%;
+  transition: transform 1s ease-out;
+}
+.logo:hover {
+  transform: scale(1.1);  
+}
+.nav-links {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.nav-links a {
+  color: rgb(235, 161, 13);
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-weight: bolder;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; 
+  cursor: pointer
+}
+.nav-links a:hover {
+  letter-spacing: 6px;
+  color: rgb(248, 204, 109);
+}
+.burger {
+  display: none;
+}
+.burger div {
+  width: 30px;
+  height: 4px;
+  margin: 5px;
+  border-radius: 1rem;
+  background-color: rgb(235, 161, 13);
+  transition: all 1s ease-in-out;
+}
+.burger:hover {
+  cursor: pointer;
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,8px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px,-8px);
+}
+a.active {
+   letter-spacing: 4px;
+   color: rgb(255, 255, 255);
+}
+/*----------------------- MAIN ----------------------------*/
+.pictures-container {
+  width: 95%;
+}
+.pictures-container > img {
+  width: 95%;
+  border-radius: 0.2rem;
+}
+main {
+  background-color: black;
+  color: aliceblue;
+}
+main h1 {
+  text-align: center;
+  padding: 2rem;
+  font-size: calc(3vmin + 30px);
+}
+.column {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+}
+.heading-content h3 {
+  padding: 0 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+/*------------------- Small devices ------------------------*/
+@media screen and (max-width:600px){
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 10vh;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    transform: translateX(101%);
+    transition: transform 1s ease-out;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+@keyframes navlinkFade {
+  from {
+        opacity: 0;
+        transform: translateX(50px);
+  } to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
