@@ -69,36 +69,10 @@ a.active {
    letter-spacing: 4px;
    color: rgb(255, 255, 255);
 }
-/*----------------------- MAIN ----------------------------*/
-.pictures-container {
-  width: 95%;
-}
-.pictures-container > img {
-  width: 95%;
-  border-radius: 0.2rem;
-}
-main {
-  background-color: black;
-  color: aliceblue;
-}
-main h1 {
-  text-align: center;
-  padding: 2rem;
-  font-size: calc(3vmin + 30px);
-}
-.column {
-  max-width: 100%;
-  margin: 0 auto;
-}
-.row {
+main h2 {
   display: flex;
-}
-.heading-content h3 {
-  padding: 0 15px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 /*------------------- Small devices ------------------------*/
 @media screen and (max-width:600px){
