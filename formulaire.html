@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Mon portfolio</title>
+</head>
+<body>
+  <header>       
+    <nav class="navbar dark-mode " role="navigation">
+      <div  class="navbar_logo"><a href="portfolio.html"><svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+      </svg></a></div>
+      <ul class="navbar_links">
+        <li class="navbar_link">
+          <a href="portfolio.html">Accueil</a>
+        </li>
+        <li class="navbar_link">
+          <a href="story.html">Mon parcours</a>
+        </li>
+        <li class="navbar_link">
+          <a href="#">Mes services</a>
+        </li>
+        <li class="navbar_link">
+          <a href="Coordonnées.html">Coordonnées</a>
+        </li>
+        <li class="navbar_link">
+          <a href="#">Exemples de site</a>
+        </li>
+        <li class="navbar_link">
+          <a href="Mon école.html">Mon école</a>
+        </li>
+      </ul>
+    </nav>  
+</header>
+<br><br><br><br><br><br>
+  <h1 class="formBootTittle" align="center">Formulaire d'inscription</h1>
+  <br><br>
+  <form action="inscription.html" method="post" id="lessonForm">
+    <fieldset>
+        <legend>Informations de connexion</legend>
+        <label for="email">Adresse e-mail</label>
+        <input type="email" name="email" id="email" required placeholder="votre adresse mail">
+        <div id="error"></div>
+
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="password" required placeholder="Votre mot de passe">
+        <div id="error2"></div>
+
+        <label for="picture">Photo de profil</label>
+        <input type="file" name="picture" id="picture" required>
+    </fieldset>
+    <fieldset>
+        <legend>Civilité</legend>
+        <div>
+            <input type="radio" id="Mr" name="civilite" value="Mr" checked>
+            <label for="Mr" class="inline-label">Monsieur</label>
+        </div>
+        <div>
+            <input type="radio" id="Mme" name="civilite" value="Mme">
+            <label for="Mme" class="inline-label">Madame</label>
+            <label for="firstName">Prénom</label>
+            <input type="text" name="firstName" id="firstName" required placeholder="John">
+
+        <label for="lastName">Nom</label>
+        <input type="text" name="lastName" id="lastName" required placeholder="Doe">
+
+        <label for="birthDate">Date de naissance</label>
+        <input type="date" name="birthDate" id="birthDate">
+
+        <label for="phoneNumber">Numéro de téléphone</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="0610101010">
+    </fieldset>
+    <fieldset>
+        <legend>Adresse*</legend>
+        <label for="city">Ville</label>
+        <input type="text" name="city" id="city" placeholder="Votre ville">
+
+        <label for="zipCode">Code postal</label>
+        <input type="number" name="zipCode" id="postCode" placeholder="Votre code postal">
+
+        <label for="address">Adresse</label>
+        <textarea name="address" id="address" cols="20" rows="5" placeholder="Votre adresse"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Language favoris*</legend>
+        <label for="Languages">Languages</label>
+        <select name="Language" id="Language">
+          <option value="python">python</option>
+          <option value="Javascript">Javascript</option>
+          <option value="php">php</option>
+          <option value="node js">node js</option>
+        </select>
+        <br>
+        <span id="message2"></span>
+    </fieldset>
+    <fieldset>
+        <legend>framework favoris*</legend>
+        <label for="Frameworks">Frameworks</label>
+        <select name="framework" id="framework">
+            <option value="bootstrap">bootstrap</option>
+            <option value="jumla">jumla</option>
+            <option value="bulma">bulma</option>
+            <option value="J query">J query</option>
+            </select>    
+            <br>        
+            <span id="message"></span>
+    </fieldset>
+    <fieldset>
+        <legend>Newsletter*</legend>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter" class="inline-label">J'accepte de recevoir la newsletter</label>
+    </fieldset>
+    <button type="submit" class="validateForm">Je souhaite m'inscrire</button>
+</form>
+</body>
+<br><p>Champs non obligatoires*</p>
+<footer> 
+         <br>
+         <a href="#" class="onTop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+         <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+         </svg>  haut de page</a>
+</footer>
+<script src="scriptForm.js"></script>
+</html>
