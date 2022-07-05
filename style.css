@@ -162,9 +162,6 @@ h1 {
   .15vw 0vw 30vw #0428fb,
   .4vw 0vw 10vw #0428fb;
 }
-.blink-effect2 {
-  animation: blink2 2s infinite alternate;
-}
 .card > span {
   font-size: 2.8rem;
   letter-spacing: 0.5rem;
@@ -199,9 +196,9 @@ h1 {
   drop-shadow(0 0.25rem 0.50rem #fffb0e)
   drop-shadow(0 0.25rem 0.50rem #8a8942)
 }
-.blink-effect {
+/*.blink-effect {
   animation: blink 2s infinite alternate;
-}
+}*/
 .club-imgs {
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -267,7 +264,7 @@ h1 {
     transform: translate(-75%, -50%);
 	}
 }
-@keyframes blink {
+/* @keyframes blink {
   0%, 18%, 22%, 35%, 68%, 72%, 90%, 99% {
     text-shadow: 
     .1vw 0vw .25vw #ff7474,
@@ -292,38 +289,7 @@ h1 {
   20%, 33%, 80% {
     text-shadow: none;
   }
-}
-@keyframes blink2 {
-  0%, 39%, 42%, 49%, 52%, 72%, 89%, 92%, 99% {
-    text-shadow: 
-    .1vw 0vw .25vw #7476ff,
-    .15vw 0vw .25vw #7476ff,
-    
-    .1vw 0vw .1vw #3134ff,
-    .15vw 0vw .1vw #3134ff,
-    .4vw 0vw .1vw #3134ff,
-    
-    .1vw 0vw 2vw #3134ff,
-    .15vw 0vw 2vw #3134ff,
-    .4vw 0vw 2vw #3134ff,
-    
-    .1vw 0vw 1vw #0428fb,
-    .15vw 0vw 1vw #0428fb,
-    .4vw 0vw 5vw #0428fb,
-    
-    .1vw 0vw 5vw #0428fb,
-    .15vw 0vw 20vw #0428fb,
-    .4vw 0vw 10vw #0428fb,
-  
-    .1vw 0vw 10vw #0428fb,
-    .15vw 0vw 30vw #0428fb,
-    .4vw 0vw 10vw #0428fb;
-
-}
-  40%, 50%, 90% {
-    text-shadow: none;
-  }
-}
+*/
 /*------------------- Small devices ------------------------*/
 @media screen and (max-width:600px){
   body {
