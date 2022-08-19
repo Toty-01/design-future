@@ -131,8 +131,7 @@ h1 {
   border-radius: 2rem;
 }
 .blink-effect2 {
-  font-family: cursive;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
 }
 .club-title, h2 {
   font-family: 'Abril Fatface', cursive;
@@ -294,6 +293,32 @@ h1 {
     text-shadow: none;
   }
 */
+h3 {
+  font-size: 2.5rem;
+  color: rgb(255, 0, 200);
+  margin-top: 2rem;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+  animation: move linear infinite 10s;
+}
+.bottom-card > .card {
+  height: 320px;
+  background: linear-gradient(90deg, black 50%, rgb(255, 0, 200) 50%);
+  text-align: center;
+}
+
+@keyframes move {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
 /*------------------- Small devices ------------------------*/
 @media screen and (max-width:600px){
   body {
